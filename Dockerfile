@@ -1,9 +1,9 @@
-FROM rust:1.76.0-alpine3.19
+FROM rust:1.83.0-alpine3.21
 
 LABEL "name"="Automate publishing Rust build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.4.5"
-LABEL "repository"="http://github.com/rust-build/rust-build.action"
-LABEL "maintainer"="Douile <25043847+Douile@users.noreply.github.com>"
+LABEL "version"="1.4.6"
+LABEL "repository"="http://github.com/k12u/rust-build.action"
+LABEL "maintainer"="k12u <k12u@users.noreply.github.com>"
 
 # Add regular dependencies
 RUN apk add --no-cache curl jq git build-base bash zip tar xz zstd upx
